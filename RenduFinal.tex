@@ -5,43 +5,56 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
-\usepackage{listings}
 \usepackage[section]{placeins}
 \usepackage{listings}
-\usepackage{color}
-\definecolor{dkgreen}{rgb}{0,0.6,0}
-\definecolor{gray}{rgb}{0.5,0.5,0.5}
-\definecolor{mauve}{rgb}{0.58,0,0.82}
-\title{Outils libre côté client}
+\usepackage{array}
+\title{Outils libres côté client}
 \author{BOFFI Aurélien & SCHWARTZ Nicolas}
 
 \begin{document}
 \maketitle
-\section{TP1}
+\tableofcontents
+\newpage
+
+\section{TP1 - Efficacité de l'environnement}
+
 \subsection{}
 
 \begin{table}[h]
-    \centering
-    \begin{tabular}{c|c}
-        1  & 2 \\
-        1 & 2
-    \end{tabular}
-    \caption{Raccourcis Linux & Divers logiciel}
-    \label{tab:my_label}
+\centering
+\begin{tabular}{l|r}
+
+Description & Raccourci \\\hline
+Discord changer de serveur  & CTRL + tab \\
+\hline
+Brave changer d'onglet   & CTRL + tab \\
+\hline
+Brave nouvel onglet   & CTRL + t \\
+\hline
+Brave nouvelle fenetre  & CTRL + n \\
+\hline
+Terminator diviser écran verticalement   & CTRL + SHIFT + e \\
+\hline
+Terminator diviser écran horizontalement   & CTRL + SHIFT + o \\
+\hline
+
+\end{tabular}
+\caption{\label{tab:widgets}Raccourcis.}
 \end{table}
+
+
 \subsection{}
 
 Le site que nous avons trouvé est le site \href{https://10fastfingers.com/typing-test/french}{\emph{Fastfingers}} qui est assez connu.
 
 \begin{figure}[h]
 \centering
-    \includegraphics[height=\textwidth]{screen/Exo1-3.png}
+    \includegraphics[height=0.7\columnwidth]{screen/Fastfingers.png}
     \caption{\label{fig:frog}Capture d'écran.}
 \end{figure}
 \FloatBarrier
+
 \subsection{}
-
-
 \begin{itemize}
     \item Paramétrer Vim comme éditeur par défaut :
     \begin{itemize}
@@ -53,7 +66,7 @@ Le site que nous avons trouvé est le site \href{https://10fastfingers.com/typin
     \includegraphics[width=\textwidth]{screen/Exo1-3.png}
     \caption{\label{fig:frog}Capture d'écran}
 \end{figure}
-
+\end{itemize}
 \subsection{}
 L'history peut devoiler l'emplacement de fichier sensible, il est donc important de bien le configurer.
 Afin d'eviter les trés nombreux ls et cd il faut ajouter :
@@ -76,33 +89,30 @@ Pour le script git emergency, voici le code :
     }
     \end{lstlisting}
 \subsection{}
-
 \begin{itemize}
-\item Créer un fichier vide backup.sh puis on ajoute le script dans /etc/bash_completion :
-   \begin{lstlisting}
-    #!/bin/bash
+    \item Créer un script vide backup.sh.
+    \item Ajouter le script dans /etc/bash\_completion :
+    \begin{lstlisting}
+    !#/bin/bash
+    _backup() {
+    local cur prev opts
 
-    _backup()
-    {
-        local cur prev opts
-    
-        cur="${COMP_WORDS[COMP_CWORD]}"
-        prev="${COMP_WORDS[COMP_CWORD-1]}"
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
 
-        local files=("${cur}"*)
+    local files=("${cur}"*)
 
-        case $COMP_CWORD in
-            1) opts=`getent passwd | cut -d: -f1`;;
-            2) opts="now tonight tomorrow";;
-            3) opts="${files[@]}";;
-            *);;
-        esac
+    case $COMP_CWORD in
+        1) opts=`getent passwd | cut -d: -f1`;;
+        2) opts="now tonight tomorrow";;
+        3) opts="${files[@]}";;
+        *);;
+    esac
 
-        COMPREPLY=()
-        COMPREPLY=( $(compgen -W "$opts" -- ${cur}) )
-        return 0
+    COMPREPLY=()
+    COMPREPLY=( $(compgen -W "$opts" -- ${cur}) )
+    return 0
     }
-
     complete -o nospace -F _backup backup
     \end{lstlisting}
 \end{itemize}
@@ -112,23 +122,18 @@ Pour le script git emergency, voici le code :
 \begin{itemize}
 \item Pour ajouter le plugin vagrant prompt nous devont nous rendre dans le fichier de notre theme.
 \item Les themes sont dans le dossier ~/.oh-my-zsh/themes.
-\item Une fois dedans nous devon rajouter les lignes suivantes :
-\begin{lstlisting}
-     PROMPT='[%{$fg[red]%}%n%{$reset_color%}@%{$fg[magenta]%}%m%{$reset_color%}:%{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info) $(vagrant_prompt_info)  ]
-%# '
+\item Une fois dedans nous devons rajouter les lignes suivantes :
 
-ZSH_THEME_VAGRANT_PROMPT_PREFIX="%{$fg_bold[blue]%}["
-ZSH_THEME_VAGRANT_PROMPT_SUFFIX="%{$fg_bold[blue]%}]%{$reset_color%} "
-ZSH_THEME_VAGRANT_PROMPT_RUNNING="%{$fg_no_bold[green]%}●"
-ZSH_THEME_VAGRANT_PROMPT_POWEROFF="%{$fg_no_bold[red]%}●"
-ZSH_THEME_VAGRANT_PROMPT_SUSPENDED="%{$fg_no_bold[yellow]%}●"
-ZSH_THEME_VAGRANT_PROMPT_NOT_CREATED="%{$fg_no_bold[white]%}○"
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{screen/1_7.png}
+    \caption{\label{fig:frog}Capture d'écran.}
+    \end{figure}
 
-\end{lstlisting}
 \end{itemize}
 
 \subsection{}
-\begin{item}
+\begin{itemize}
 \item Code à ajouter dans le fichier ~/.zhsrc
 \begin{lstlisting}
 double-up-history() {
@@ -147,9 +152,10 @@ double-up-history() {
 zle -N double-up-history
 bindkey "\C-A" double-up-history
 \end{lstlisting}
-\end{item}
+\end{itemize}
 
 \subsection{}
+
 \begin{itemize}
     \item Terminaux testé :Terminator, kitty, coolretroterminal
     \item Terminator : plusieurs onglets ouverts assez facilement + performanant
@@ -168,23 +174,21 @@ bindkey "\C-A" double-up-history
 Les history sont vides car c'est la première fois que les machines sont utilisés.
 
 \subsection{}
+
 \begin{itemize}
     \item ssh-keygen
     \item ssh-copy-id alice@192.168.56.3
 \end{itemize}
 Pour déposer manuellement : 
 \begin{itemize}
-    \item cat /vagrant/id_rsa.pub >> ~/.ssh/authorized_keys 
+    \item cat /vagrant/id\_rsa.pub >> ~/.ssh/authorized\_keys 
 \end{itemize}
 
 \subsection{}
-\begin{itemize}
-    \item Purge du fichier know_hosts :
-    \item echo "" >> know_hosts
-    \item copie manuel :cat /vagrant/id_rsa.pub >> ~/.ssh/authorized_keys
-\end{itemize}
+
 Ajout de l'host bc :
 \begin{itemize}
+\item
 \begin{lstlisting}
 Host
    Hostname 192.168.56.3
@@ -203,7 +207,7 @@ ssh -L 8000:srv.local:80 alice@cli.local
 \begin{itemize}
     \item Sur notre machine : ssh -D 9000 alice@cli.local
     \item Editer le fichier /etc/tsocks.conf
-    \item Commenter les lignes suivantes et modifier la valeur de server_port :
+    \item Commenter les lignes suivantes et modifier la valeur de server\_port :
 \begin{lstlisting}
 #local = 192.168.0.0/255.255.255.0
 #local = 10.0.0.0/255.0.0.0
@@ -217,7 +221,7 @@ server_port = 9000
     \item ssh bc
     \item apt install x11-apps
     \item apt install xauth
-    \item #ForwardX11 yes
+    \item \#ForwardX11 yes
     \item ssh -X 192.168.56.3
     \item xeyes
 \end{itemize}
@@ -234,6 +238,7 @@ Host srv
 \end{lstlisting}
 \end{itemize}
 
+\newpage
 
 \section{TP3 - GIT}
 
@@ -241,93 +246,81 @@ Host srv
 
 \begin{figure}[h]
 \centering
-\includegraphics[height=\textwidth]{screen/git1.png}
+\includegraphics[width=\textwidth]{screen/git1.png}
 \caption{\label{fig:frog}Capture d'écran.}
 \end{figure}
-\FloatBarrier
 
 \begin{figure}[h]
 \centering
-\includegraphics[height=\textwidth]{screen/git2.png}
+\includegraphics[width=0.7\columnwidth]{screen/git2.png}
 \caption{\label{fig:frog}Capture d'écran.}
 \end{figure}
-\FloatBarrier
-
 
 \subsection{}
 
 \begin{figure}[h]
 \centering
-\includegraphics[height=\textwidth]{screen/git2_1.png}
+\includegraphics[width=0.7\columnwidth]{screen/git2_1.png}
 \caption{\label{fig:frog}Capture d'écran.}
 \end{figure}
-\FloatBarrier
 
 \begin{figure}[h]
 \centering
-\includegraphics[height=\textwidth]{screen/git2_2.png
+\includegraphics[width=0.7\columnwidth]{screen/git2_2.png}
 \caption{\label{fig:frog}Capture d'écran.}
 \end{figure}
-\FloatBarrier
 
 \begin{figure}[h]
 \centering
-\includegraphics[height=\textwidth]{screen/git2_3.png}
+\includegraphics[width=0.7\columnwidth]{screen/git2_3.png}
 \caption{\label{fig:frog}Capture d'écran.}
 \end{figure}
-\FloatBarrier
 
 \begin{figure}[h]
 \centering
-\includegraphics[height=\textwidth]{screen/git2_4.png}
+\includegraphics[width=\textwidth]{screen/git2_4.png}
 \caption{\label{fig:frog}Capture d'écran.}
 \end{figure}
-\FloatBarrier
 
 \begin{figure}[h]
 \centering
-\includegraphics[height=\textwidth]{screen/git2_5.png}
+\includegraphics[width=0.7\columnwidth]{screen/git2_5.png}
 \caption{\label{fig:frog}Capture d'écran.}
 \end{figure}
-\FloatBarrier
 
 \subsection{}
 
 \begin{figure}[h]
 \centering
-\includegraphics[height=\textwidth]{screen/git3.png}
+\includegraphics[width=0.7\columnwidth]{screen/git3.png}
 \caption{\label{fig:frog}Capture d'écran.}
 \end{figure}
-\FloatBarrier
 
 \begin{figure}[h]
 \centering
-\includegraphics[height=\textwidth]{screen/git3_1.png}
+\includegraphics[width=0.7\columnwidth]{screen/git3_1.png}
 \caption{\label{fig:frog}Capture d'écran.}
 \end{figure}
-\FloatBarrier
 
 \begin{figure}[h]
 \centering
-\includegraphics[height=\textwidth]{screen/git3_2.png}
+\includegraphics[width=0.7\columnwidth]{screen/git3_2.png}
 \caption{\label{fig:frog}Capture d'écran.}
 \end{figure}
-\FloatBarrier
-
 
 \begin{figure}[h]
 \centering
-\includegraphics[height=\textwidth]{screen/git3_3.png}
+\includegraphics[width=0.7\columnwidth]{screen/git3_3.png}
 \caption{\label{fig:frog}Capture d'écran.}
 \end{figure}
-\FloatBarrier
 
 \begin{figure}[h]
 \centering
-\includegraphics[height=\textwidth]{screen/git3_4.png}
-    \caption{\label{fig:frog}Capture d'écran.}
-    \end{figure}
-    \FloatBarrier
+\includegraphics[width=0.7\columnwidth]{screen/git3_4.png}
+\caption{\label{fig:frog}Capture d'écran.}
+\end{figure}
+
+
 
 
 \end{document}

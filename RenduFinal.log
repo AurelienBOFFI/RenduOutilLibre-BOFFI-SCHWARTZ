@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.1.31)  13 FEB 2022 18:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.1.31)  13 FEB 2022 20:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **RenduFinal
-(./RenduFinal
+(./RenduFinal.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-01-09> xparse <2020-03-03>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -282,7 +282,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip52
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+(./placeins.sty
+Package: placeins 2005/04/18  v 2.2
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count282
 \lst@gtempboxa=\box49
 \lst@token=\toks24
@@ -295,7 +297,6 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \lst@newlines=\count286
 \lst@lineno=\count287
 \lst@maxwidth=\dimen166
-
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count288
@@ -307,15 +308,61 @@ File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
-(./placeins.sty
-Package: placeins 2005/04/18  v 2.2
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen167
+\ar@mcellbox=\box51
+\extrarowheight=\dimen168
+\NC@list=\toks25
+\extratabsurround=\skip53
+\backup@length=\skip54
+\ar@cellbox=\box52
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count290
-\l__pdf_internal_box=\box51
+\l__pdf_internal_box=\box53
 )
 (./RenduFinal.aux
+
+LaTeX Warning: Label `fig:frog' multiply defined.
+
+
+LaTeX Warning: Label `fig:frog' multiply defined.
+
+
+LaTeX Warning: Label `fig:frog' multiply defined.
+
+
+LaTeX Warning: Label `fig:frog' multiply defined.
+
+
+LaTeX Warning: Label `fig:frog' multiply defined.
+
+
+LaTeX Warning: Label `fig:frog' multiply defined.
+
+
+LaTeX Warning: Label `fig:frog' multiply defined.
+
+
+LaTeX Warning: Label `fig:frog' multiply defined.
+
+
+LaTeX Warning: Label `fig:frog' multiply defined.
+
+
+LaTeX Warning: Label `fig:frog' multiply defined.
+
+
+LaTeX Warning: Label `fig:frog' multiply defined.
+
+
+LaTeX Warning: Label `fig:frog' multiply defined.
+
+
+LaTeX Warning: Label `fig:frog' multiply defined.
+
 
 LaTeX Warning: Label `fig:frog' multiply defined.
 
@@ -344,28 +391,20 @@ LaTeX Info: Redefining \up on input line 14.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count291
-\scratchdimen=\dimen167
-\scratchbox=\box52
+\scratchdimen=\dimen169
+\scratchbox=\box54
 \nofMPsegments=\count292
 \nofMParguments=\count293
-\everyMPshowfont=\toks25
+\everyMPshowfont=\toks26
 \MPscratchCnt=\count294
-\MPscratchDim=\dimen168
+\MPscratchDim=\dimen170
 \MPnumerator=\count295
 \makeMPintoPDFobject=\count296
-\everyMPtoPDFconversion=\toks26
+\everyMPtoPDFconversion=\toks27
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
@@ -405,687 +444,173 @@ LaTeX Info: Redefining \nameref on input line 14.
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.16 \section
-             {TP1}
+l.16 \tableofcontents
+                     
 ? 
-! Misplaced alignment tab character &.
-<argument> ...ntHref }{\relax }}Raccourcis Linux &
-                                                   Divers logiciel\fi 
-l.25 ...aption{Raccourcis Linux & Divers logiciel}
-                                                  
-? 
+(./RenduFinal.toc)
+\tf@toc=\write4
+\openout4 = `RenduFinal.toc'.
 
-LaTeX Warning: File `test/frog.jpg' not found on input line 34.
-
-
-! Package pdftex.def Error: File `test/frog.jpg' not found: using draft setting
-.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.34 ...graphics[height=\textwidth]{test/frog.jpg}
-                                                  
-? 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[1
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<screen/Fastfingers.png, id=126, 245.91875pt x 299.1175pt>
+File: screen/Fastfingers.png Graphic file (type png)
+<use screen/Fastfingers.png>
+Package pdftex.def Info: screen/Fastfingers.png  used on input line 52.
+(pdftex.def)             Requested size: 198.55142pt x 241.49895pt.
 
-LaTeX Warning: File `test/frog.jpg' not found on input line 49.
+[2 <./screen/Fastfingers.png>]
+<screen/Exo1-3.png, id=135, 1037.8775pt x 242.9075pt>
+File: screen/Exo1-3.png Graphic file (type png)
+<use screen/Exo1-3.png>
+Package pdftex.def Info: screen/Exo1-3.png  used on input line 66.
+(pdftex.def)             Requested size: 345.0pt x 80.74533pt.
 
-
-! Package pdftex.def Error: File `test/frog.jpg' not found: using draft setting
-.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.49 ...egraphics[width=\textwidth]{test/frog.jpg}
-                                                  
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
+Underfull \hbox (badness 10000) in paragraph at lines 71--74
 
  []
 
-[2] [3]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 6
-2.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 7
+9.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
+ [3 <./screen/Exo1-3.png>]
+<screen/1_7.png, id=161, 1299.85625pt x 890.32625pt>
+File: screen/1_7.png Graphic file (type png)
+<use screen/1_7.png>
+Package pdftex.def Info: screen/1_7.png  used on input line 129.
+(pdftex.def)             Requested size: 241.49895pt x 165.40062pt.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.77 ...h puis on ajoute le script dans /etc/bash_
-                                                  completion :
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.78 \begin{lstlisting}
-                       
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.78 \begin{lstlisting}
-                       
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.78 \begin{lstlisting}
-                       
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.78 \begin{lstlisting}
-                       
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.78 \begin{lstlisting}
-                       
-? 
-
-Overfull \hbox (51.91989pt too wide) in paragraph at lines 77--78
-[]\OT1/cmr/m/n/10 Cr^^Seer un fi-chier vide ba-ckup.sh puis on ajoute le script
- dans /etc/bash$[]\OML/cmm/m/it/10 ompletion \OT1/cmr/m/n/10 :
- []
-
-! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.78 \begin{lstlisting}
-                       
-? 
-! Undefined control sequence.
-\lst@GetLineInterval ...r \lst@GLI \lst@linerange 
-                                                  \@nil 
-l.78 \begin{lstlisting}
-                       
-? 
-Runaway argument?
-\@nil \lst@ifsensitive \else \let \lst@KeywordTest \lst@KEYWORDTEST \let \ETC.
-! Paragraph ended before \lst@GLI was complete.
-<to be read again> 
-                   \par 
-l.80 
-     
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.81 _
-      backup()
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.84 
-     
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.84 
-     
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.86     prev="${COMP_
-                      WORDS[COMP_CWORD-1]}"
-? 
-! Extra }, or forgotten $.
-l.86     prev="${COMP_WORDS[COMP_CWORD-1]}
-                                          "
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.87 
-     
-? 
-
-Overfull \hbox (33.99393pt too wide) in paragraph at lines 85--87
-[]\OT1/cmr/m/n/10 cur="$[]"\OML/cmm/m/it/10 prev \OT1/cmr/m/n/10 = "$COMP$[]\OM
-L/cmm/m/it/10 ORDS\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 COMP[]WORD \OMS/cmsy/m/n/10
- ^^@
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.89 
-     
-? 
-
-Overfull \hbox (122.05063pt too wide) in paragraph at lines 90--96
-[]\OT1/cmr/m/n/10 case $\OML/cmm/m/it/10 COMP[]WORDin\OT1/cmr/m/n/10 1)\OML/cmm
-/m/it/10 opts \OT1/cmr/m/n/10 = `\OML/cmm/m/it/10 getentpasswd\OMS/cmsy/m/n/10 
-j\OML/cmm/m/it/10 cut \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 d \OT1/cmr/m/n/10 :
- \OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 1`; ; 2)\OML/cmm/m/it/10
- opts \OT1/cmr/m/n/10 = "\OML/cmm/m/it/10 nowtonighttomorrow\OT1/cmr/m/n/10 "; 
-; 3)\OML/cmm/m/it/10 opts \OT1/cmr/m/n/10 =
- []
-
-! Extra }, or forgotten $.
-l.100 }
-       
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.101 
-      
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.102 complete -o nospace -F _
-                              backup backup
-? 
-
-! Undefined control sequence.
-\lstlisting ->\def \lstenv@name 
-                                {lstlisting}\begingroup \lst@setcatcodes \ca...
-l.103 \end{lstlisting}
-                      
-? 
-! Package Listings Error: Extra \endlstlisting.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.103 \end{lstlisting}
-                      
-? 
-
-! LaTeX Error: \begin{itemize} on input line 76 ended by \end{lstlisting}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.103 \end{lstlisting}
-                      
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.103 \end{lstlisting}
-                      
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.103 \end{lstlisting}
-                      
-? 
-
-Overfull \hbox (594.00941pt too wide) in paragraph at lines 113--114
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][]
- []
-
-
-Overfull \hbox (90.00429pt too wide) in paragraph at lines 117--118
-[][][][][][][][][][][][][] 
- []
-
-
-! Package inputenc Error: Invalid UTF-8 byte sequence.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.118 ...ROMPT_RUNNING="%{$fg_no_bold[green]%}●"
-                                                  
-? 
-
-! Package inputenc Error: Invalid UTF-8 byte "8F.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.118 ...ROMPT_RUNNING="%{$fg_no_bold[green]%}●"
-                                                  
-? 
-
-Overfull \hbox (30.00368pt too wide) in paragraph at lines 118--119
-[][][][][][][][][][][] 
- []
-
-
-! Package inputenc Error: Invalid UTF-8 byte sequence.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.119 ...PROMPT_POWEROFF="%{$fg_no_bold[red]%}●"
-                                                  
-? 
-
-! Package inputenc Error: Invalid UTF-8 byte "8F.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.119 ...PROMPT_POWEROFF="%{$fg_no_bold[red]%}●"
-                                                  
-? 
-
-Overfull \hbox (24.00362pt too wide) in paragraph at lines 119--120
-[][][][][][][][][][][] 
- []
-
-
-! Package inputenc Error: Invalid UTF-8 byte sequence.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.120 ...PT_SUSPENDED="%{$fg_no_bold[yellow]%}●"
-                                                  
-? 
-
-! Package inputenc Error: Invalid UTF-8 byte "8F.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.120 ...PT_SUSPENDED="%{$fg_no_bold[yellow]%}●"
-                                                  
-? 
-
-Overfull \hbox (48.00386pt too wide) in paragraph at lines 120--121
-[][][][][][][][][][][] 
- []
-
-
-! Package inputenc Error: Invalid UTF-8 byte sequence.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.121 ...T_NOT_CREATED="%{$fg_no_bold[white]%}○"
-                                                  
-? 
-
-! Package inputenc Error: Invalid UTF-8 byte "8B.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.121 ...T_NOT_CREATED="%{$fg_no_bold[white]%}○"
-                                                  
-? 
-
-Overfull \hbox (54.00392pt too wide) in paragraph at lines 121--123
-[][][][][][][][][][][] 
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.128 \item
-            Code à ajouter dans le fichier ~/.zhsrc
-? 
-
-Underfull \hbox (badness 10000) detected at line 128
-[][]
- []
-
-[4]
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.128 \item C
-             ode à ajouter dans le fichier ~/.zhsrc
-? 
-
-Underfull \hbox (badness 10000) detected at line 128
-[][]
- []
-
-
-Overfull \hbox (33.00385pt too wide) in paragraph at lines 131--132
+Overfull \hbox (63.00386pt too wide) in paragraph at lines 140--141
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.172     \item cat /vagrant/id_
-                                rsa.pub >> ~/.ssh/authorized_keys
-? 
+[4 <./screen/1_7.png>] [5] [6] [7]
+<screen/git1.png, id=228, 1132.23pt x 222.8325pt>
+File: screen/git1.png Graphic file (type png)
+<use screen/git1.png>
+Package pdftex.def Info: screen/git1.png  used on input line 249.
+(pdftex.def)             Requested size: 345.0pt x 67.8975pt.
+<screen/git2.png, id=229, 634.37pt x 84.315pt>
+File: screen/git2.png Graphic file (type png)
+<use screen/git2.png>
+Package pdftex.def Info: screen/git2.png  used on input line 255.
+(pdftex.def)             Requested size: 241.49895pt x 32.09792pt.
+<screen/git2_1.png, id=230, 697.60625pt x 495.8525pt>
+File: screen/git2_1.png Graphic file (type png)
+<use screen/git2_1.png>
+Package pdftex.def Info: screen/git2_1.png  used on input line 263.
+(pdftex.def)             Requested size: 241.49895pt x 171.65189pt.
+<screen/git2_2.png, id=231, 633.36626pt x 79.29625pt>
+File: screen/git2_2.png Graphic file (type png)
+<use screen/git2_2.png>
+Package pdftex.def Info: screen/git2_2.png  used on input line 269.
+(pdftex.def)             Requested size: 241.49895pt x 30.23451pt.
 
-! LaTeX Error: Command \end{itemize} invalid in math mode.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.173 \end{itemize}
-                   
-? 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+<screen/git2_3.png, id=232, 605.26125pt x 79.29625pt>
+File: screen/git2_3.png Graphic file (type png)
+<use screen/git2_3.png>
+Package pdftex.def Info: screen/git2_3.png  used on input line 275.
+(pdftex.def)             Requested size: 241.49895pt x 31.63928pt.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.173 \end{itemize}
-                   
-? 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+<screen/git2_4.png, id=233, 692.5875pt x 105.39375pt>
+File: screen/git2_4.png Graphic file (type png)
+<use screen/git2_4.png>
+Package pdftex.def Info: screen/git2_4.png  used on input line 281.
+(pdftex.def)             Requested size: 345.0pt x 52.50053pt.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.173 \end{itemize}
-                   
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.173 \end{itemize}
-                   
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.177     \item Purge du fichier know_
-                                      hosts :
-? 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-! LaTeX Error: Command \item invalid in math mode.
+<screen/git2_5.png, id=234, 617.30624pt x 62.2325pt>
+File: screen/git2_5.png Graphic file (type png)
+<use screen/git2_5.png>
+Package pdftex.def Info: screen/git2_5.png  used on input line 287.
+(pdftex.def)             Requested size: 241.49895pt x 24.34654pt.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.178     \item
-                echo "" >> know_hosts
-? 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+<screen/git3.png, id=235, 689.57625pt x 245.91875pt>
+File: screen/git3.png Graphic file (type png)
+<use screen/git3.png>
+Package pdftex.def Info: screen/git3.png  used on input line 295.
+(pdftex.def)             Requested size: 241.49895pt x 86.12538pt.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.178     \item e
-                 cho "" >> know_hosts
-? 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+<screen/git3_1.png, id=236, 617.30624pt x 82.3075pt>
+File: screen/git3_1.png Graphic file (type png)
+<use screen/git3_1.png>
+Package pdftex.def Info: screen/git3_1.png  used on input line 301.
+(pdftex.def)             Requested size: 241.49895pt x 32.20026pt.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.178     \item e
-                 cho "" >> know_hosts
-? 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-! LaTeX Error: Command \item invalid in math mode.
+<screen/git3_2.png, id=237, 765.86125pt x 273.02pt>
+File: screen/git3_2.png Graphic file (type png)
+<use screen/git3_2.png>
+Package pdftex.def Info: screen/git3_2.png  used on input line 307.
+(pdftex.def)             Requested size: 241.49895pt x 86.08923pt.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179     \item
-                copie manuel :cat /vagrant/id_rsa.pub >> ~/.ssh/authorized_keys
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.179     \item c
-                 opie manuel :cat /vagrant/id_rsa.pub >> ~/.ssh/authorized_keys
+<screen/git3_3.png, id=238, 860.21375pt x 378.41376pt>
+File: screen/git3_3.png Graphic file (type png)
+<use screen/git3_3.png>
+Package pdftex.def Info: screen/git3_3.png  used on input line 313.
+(pdftex.def)             Requested size: 241.49895pt x 106.23228pt.
 
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.179     \item c
-                 opie manuel :cat /vagrant/id_rsa.pub >> ~/.ssh/authorized_keys
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-? 
-! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.179     \item c
-                 opie manuel :cat /vagrant/id_rsa.pub >> ~/.ssh/authorized_keys
+<screen/git3_4.png, id=239, 552.0625pt x 99.37125pt>
+File: screen/git3_4.png Graphic file (type png)
+<use screen/git3_4.png>
+Package pdftex.def Info: screen/git3_4.png  used on input line 319.
+(pdftex.def)             Requested size: 241.49895pt x 43.47026pt.
 
-? 
-[5]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.179     \item copie manuel :cat /vagrant/id_
-                                              rsa.pub >> ~/.ssh/authorized_keys
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-? 
-
-! LaTeX Error: Command \end{itemize} invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.180 \end{itemize}
-                   
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.180 \end{itemize}
-                   
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.180 \end{itemize}
-                   
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.180 \end{itemize}
-                   
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.188 \end{itemize}
-                   
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.201 ...uivantes et modifier la valeur de server_
-                                                  port :
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.202 \begin{lstlisting}
-                        
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.202 \begin{lstlisting}
-                        
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.202 \begin{lstlisting}
-                        
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.202 \begin{lstlisting}
-                        
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.202 \begin{lstlisting}
-                        
-? 
-! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.202 \begin{lstlisting}
-                        
-? 
-! Undefined control sequence.
-\lst@GetLineInterval ...r \lst@GLI \lst@linerange 
-                                                  \@nil 
-l.202 \begin{lstlisting}
-                        
-? 
-Runaway argument?
-\@nil \lst@ifsensitive \else \let \lst@KeywordTest \lst@KEYWORDTEST \let \ETC.
-! Paragraph ended before \lst@GLI was complete.
-<to be read again> 
-                   \par 
-l.206 
-      
-? 
-
-! Undefined control sequence.
-\lstlisting ->\def \lstenv@name 
-                                {lstlisting}\begingroup \lst@setcatcodes \ca...
-l.207 \end{lstlisting}
-                      
-? 
-! Package Listings Error: Extra \endlstlisting.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.207 \end{lstlisting}
-                      
-? 
-
-! LaTeX Error: \begin{itemize} on input line 198 ended by \end{lstlisting}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.207 \end{lstlisting}
-                      
-? 
-
-! LaTeX Error: \begin{document} ended by \end{itemize}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.208 \end{itemize}
-                   
-? 
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.208 \end{itemize}
-                   
-? 
-! You can't use `macro parameter character #' in vertical mode.
-<recently read> ##
-                  
-l.215     \item #
-                 ForwardX11 yes
-? 
-[6] (./RenduFinal.aux)
+[8 <./screen/git1.png (PNG copy)> <./screen/git2.png (PNG copy)> <./screen/git2
+_1.png (PNG copy)>] [9 <./screen/git2_2.png (PNG copy)> <./screen/git2_3.png (P
+NG copy)> <./screen/git2_4.png (PNG copy)> <./screen/git2_5.png (PNG copy)> <./
+screen/git3.png (PNG copy)> <./screen/git3_1.png (PNG copy)>] [10 <./screen/git
+3_2.png (PNG copy)> <./screen/git3_3.png (PNG copy)> <./screen/git3_4.png (PNG 
+copy)>] (./RenduFinal.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `RenduFinal.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `RenduFinal.out':
-(rerunfilecheck)             Before: 5DDEE960A70D64863E5A599072F952AE;332
-(rerunfilecheck)             After:  20B3783173DF985B2D6BFD68806B2E26;920.
+Package rerunfilecheck Info: File `RenduFinal.out' has not changed.
+(rerunfilecheck)             Checksum: A51BA8C9BC317B5446D73972D19C894C;1105.
  ) 
 Here is how much of TeX's memory you used:
- 9313 strings out of 481223
- 136071 string characters out of 5914619
- 480600 words of memory out of 5000000
- 26031 multiletter control sequences out of 15000+600000
- 409655 words of font info for 49 fonts, out of 8000000 for 9000
+ 9450 strings out of 481223
+ 138100 string characters out of 5914619
+ 471701 words of memory out of 5000000
+ 26128 multiletter control sequences out of 15000+600000
+ 409795 words of font info for 49 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 71i,8n,74p,237b,1362s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,9n,74p,237b,1845s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/aurelien/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.
-600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmtt10.pfb>
-Output written on RenduFinal.pdf (6 pages, 131452 bytes).
+600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmti10.pfb>
+Output written on RenduFinal.pdf (10 pages, 626408 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
- 78 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 325 PDF objects out of 1000 (max. 8388607)
+ 284 compressed objects within 3 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 252 words of extra memory for PDF output out of 10000 (max. 10000000)
 
