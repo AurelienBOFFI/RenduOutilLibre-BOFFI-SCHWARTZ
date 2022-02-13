@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.1.31)  13 FEB 2022 21:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.1.31)  13 FEB 2022 22:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -460,35 +460,35 @@ l.16 \tableofcontents
 <screen/Fastfingers.png, id=126, 245.91875pt x 299.1175pt>
 File: screen/Fastfingers.png Graphic file (type png)
 <use screen/Fastfingers.png>
-Package pdftex.def Info: screen/Fastfingers.png  used on input line 45.
+Package pdftex.def Info: screen/Fastfingers.png  used on input line 52.
 (pdftex.def)             Requested size: 198.55142pt x 241.49895pt.
 
 [2 <./screen/Fastfingers.png>]
 <screen/Exo1-3.png, id=135, 1037.8775pt x 242.9075pt>
 File: screen/Exo1-3.png Graphic file (type png)
 <use screen/Exo1-3.png>
-Package pdftex.def Info: screen/Exo1-3.png  used on input line 59.
+Package pdftex.def Info: screen/Exo1-3.png  used on input line 66.
 (pdftex.def)             Requested size: 345.0pt x 80.74533pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--67
+Underfull \hbox (badness 10000) in paragraph at lines 71--74
 
  []
 
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 7
-2.
+9.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 72.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
  [3 <./screen/Exo1-3.png>]
 <screen/1_7.png, id=161, 1299.85625pt x 890.32625pt>
 File: screen/1_7.png Graphic file (type png)
 <use screen/1_7.png>
-Package pdftex.def Info: screen/1_7.png  used on input line 122.
+Package pdftex.def Info: screen/1_7.png  used on input line 129.
 (pdftex.def)             Requested size: 241.49895pt x 165.40062pt.
 
-Overfull \hbox (63.00386pt too wide) in paragraph at lines 133--134
+Overfull \hbox (63.00386pt too wide) in paragraph at lines 140--141
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -496,28 +496,28 @@ Overfull \hbox (63.00386pt too wide) in paragraph at lines 133--134
 <screen/ssh3.png, id=202, 241.90375pt x 75.28125pt>
 File: screen/ssh3.png Graphic file (type png)
 <use screen/ssh3.png>
-Package pdftex.def Info: screen/ssh3.png  used on input line 195.
+Package pdftex.def Info: screen/ssh3.png  used on input line 202.
 (pdftex.def)             Requested size: 241.49895pt x 75.15813pt.
  [6 <./screen/ssh3.png>] [7]
 <screen/git1.png, id=230, 1132.23pt x 222.8325pt>
 File: screen/git1.png Graphic file (type png)
 <use screen/git1.png>
-Package pdftex.def Info: screen/git1.png  used on input line 251.
+Package pdftex.def Info: screen/git1.png  used on input line 262.
 (pdftex.def)             Requested size: 345.0pt x 67.8975pt.
 <screen/git2.png, id=231, 634.37pt x 84.315pt>
 File: screen/git2.png Graphic file (type png)
 <use screen/git2.png>
-Package pdftex.def Info: screen/git2.png  used on input line 257.
+Package pdftex.def Info: screen/git2.png  used on input line 268.
 (pdftex.def)             Requested size: 241.49895pt x 32.09792pt.
 <screen/git2_1.png, id=232, 697.60625pt x 495.8525pt>
 File: screen/git2_1.png Graphic file (type png)
 <use screen/git2_1.png>
-Package pdftex.def Info: screen/git2_1.png  used on input line 265.
+Package pdftex.def Info: screen/git2_1.png  used on input line 280.
 (pdftex.def)             Requested size: 241.49895pt x 171.65189pt.
 <screen/git2_2.png, id=233, 633.36626pt x 79.29625pt>
 File: screen/git2_2.png Graphic file (type png)
 <use screen/git2_2.png>
-Package pdftex.def Info: screen/git2_2.png  used on input line 271.
+Package pdftex.def Info: screen/git2_2.png  used on input line 286.
 (pdftex.def)             Requested size: 345.0pt x 43.19441pt.
 
 
@@ -526,7 +526,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <screen/git2_3.png, id=234, 605.26125pt x 79.29625pt>
 File: screen/git2_3.png Graphic file (type png)
 <use screen/git2_3.png>
-Package pdftex.def Info: screen/git2_3.png  used on input line 277.
+Package pdftex.def Info: screen/git2_3.png  used on input line 292.
 (pdftex.def)             Requested size: 241.49895pt x 31.63928pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -534,7 +534,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <screen/git2_4.png, id=235, 692.5875pt x 105.39375pt>
 File: screen/git2_4.png Graphic file (type png)
 <use screen/git2_4.png>
-Package pdftex.def Info: screen/git2_4.png  used on input line 283.
+Package pdftex.def Info: screen/git2_4.png  used on input line 298.
 (pdftex.def)             Requested size: 241.49895pt x 36.75005pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -542,7 +542,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <screen/git2_5.png, id=236, 617.30624pt x 62.2325pt>
 File: screen/git2_5.png Graphic file (type png)
 <use screen/git2_5.png>
-Package pdftex.def Info: screen/git2_5.png  used on input line 289.
+Package pdftex.def Info: screen/git2_5.png  used on input line 303.
 (pdftex.def)             Requested size: 241.49895pt x 24.34654pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -550,49 +550,50 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <screen/git3.png, id=237, 689.57625pt x 245.91875pt>
 File: screen/git3.png Graphic file (type png)
 <use screen/git3.png>
-Package pdftex.def Info: screen/git3.png  used on input line 297.
+Package pdftex.def Info: screen/git3.png  used on input line 311.
 (pdftex.def)             Requested size: 241.49895pt x 86.12538pt.
+[8 <./screen/git1.png (PNG copy)> <./screen/git2.png (PNG copy)> <./screen/git2
+_1.png (PNG copy)>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<screen/git3_1.png, id=238, 617.30624pt x 82.3075pt>
+<screen/git3_1.png, id=245, 617.30624pt x 82.3075pt>
 File: screen/git3_1.png Graphic file (type png)
 <use screen/git3_1.png>
-Package pdftex.def Info: screen/git3_1.png  used on input line 303.
+Package pdftex.def Info: screen/git3_1.png  used on input line 317.
 (pdftex.def)             Requested size: 241.49895pt x 32.20026pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<screen/git3_2.png, id=239, 765.86125pt x 273.02pt>
+<screen/git3_2.png, id=246, 765.86125pt x 273.02pt>
 File: screen/git3_2.png Graphic file (type png)
 <use screen/git3_2.png>
-Package pdftex.def Info: screen/git3_2.png  used on input line 309.
+Package pdftex.def Info: screen/git3_2.png  used on input line 323.
 (pdftex.def)             Requested size: 241.49895pt x 86.08923pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<screen/git3_3.png, id=240, 860.21375pt x 378.41376pt>
+<screen/git3_3.png, id=247, 860.21375pt x 378.41376pt>
 File: screen/git3_3.png Graphic file (type png)
 <use screen/git3_3.png>
-Package pdftex.def Info: screen/git3_3.png  used on input line 315.
+Package pdftex.def Info: screen/git3_3.png  used on input line 329.
 (pdftex.def)             Requested size: 241.49895pt x 106.23228pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<screen/git3_4.png, id=241, 552.0625pt x 99.37125pt>
+<screen/git3_4.png, id=248, 552.0625pt x 99.37125pt>
 File: screen/git3_4.png Graphic file (type png)
 <use screen/git3_4.png>
-Package pdftex.def Info: screen/git3_4.png  used on input line 321.
+Package pdftex.def Info: screen/git3_4.png  used on input line 335.
 (pdftex.def)             Requested size: 241.49895pt x 43.47026pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8 <./screen/git1.png (PNG copy)> <./screen/git2.png (PNG copy)> <./screen/git2
-_1.png (PNG copy)>] [9 <./screen/git2_2.png (PNG copy)> <./screen/git2_3.png (P
-NG copy)> <./screen/git2_4.png (PNG copy)> <./screen/git2_5.png (PNG copy)> <./
-screen/git3.png (PNG copy)> <./screen/git3_1.png (PNG copy)>] [10 <./screen/git
-3_2.png (PNG copy)> <./screen/git3_3.png (PNG copy)> <./screen/git3_4.png (PNG 
-copy)>] (./RenduFinal.aux)
+[9 <./screen/git2_2.png (PNG copy)> <./screen/git2_3.png (PNG copy)>] [10 <./sc
+reen/git2_4.png (PNG copy)> <./screen/git2_5.png (PNG copy)> <./screen/git3.png
+ (PNG copy)> <./screen/git3_1.png (PNG copy)> <./screen/git3_2.png (PNG copy)> 
+<./screen/git3_3.png (PNG copy)>] [11 <./screen/git3_4.png (PNG copy)>]
+(./RenduFinal.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -600,8 +601,8 @@ Package rerunfilecheck Info: File `RenduFinal.out' has not changed.
 (rerunfilecheck)             Checksum: A51BA8C9BC317B5446D73972D19C894C;1105.
  ) 
 Here is how much of TeX's memory you used:
- 9457 strings out of 481223
- 138211 string characters out of 5914619
+ 9458 strings out of 481223
+ 138218 string characters out of 5914619
  471696 words of memory out of 5000000
  26133 multiletter control sequences out of 15000+600000
  409795 words of font info for 49 fonts, out of 8000000 for 9000
@@ -616,10 +617,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmti10.pfb>
-Output written on RenduFinal.pdf (10 pages, 633145 bytes).
+Output written on RenduFinal.pdf (11 pages, 633708 bytes).
 PDF statistics:
- 327 PDF objects out of 1000 (max. 8388607)
- 285 compressed objects within 3 object streams
- 116 named destinations out of 1000 (max. 500000)
+ 331 PDF objects out of 1000 (max. 8388607)
+ 288 compressed objects within 3 object streams
+ 117 named destinations out of 1000 (max. 500000)
  257 words of extra memory for PDF output out of 10000 (max. 10000000)
 

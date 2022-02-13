@@ -24,13 +24,20 @@
 \centering
 \begin{tabular}{l|r}
 
-Action + nom logiciel& Raccourci \\\hline
-Discord changer de serveur  & CTRL + tab \\\hline
-Brave changer d'onglet   & CTRL + tab \\\hline
-Brave nouvel onglet   & CTRL + t \\\hline
-Brave nouvelle fenetre  & CTRL + n \\\hline
-Terminator diviser écran verticalement   & CTRL + SHIFT + e \\\hline
-Terminator diviser écran horizontalement   & CTRL + SHIFT + o \\\hline
+Description & Raccourci \\\hline
+Discord changer de serveur  & CTRL + tab \\
+\hline
+Brave changer d'onglet   & CTRL + tab \\
+\hline
+Brave nouvel onglet   & CTRL + t \\
+\hline
+Brave nouvelle fenetre  & CTRL + n \\
+\hline
+Terminator diviser écran verticalement   & CTRL + SHIFT + e \\
+\hline
+Terminator diviser écran horizontalement   & CTRL + SHIFT + o \\
+\hline
+
 \end{tabular}
 \caption{\label{tab:widgets}Raccourcis.}
 \end{table}
@@ -43,7 +50,7 @@ Le site que nous avons trouvé est le site \href{https://10fastfingers.com/typin
 \begin{figure}[h]
 \centering
     \includegraphics[height=0.7\columnwidth]{screen/Fastfingers.png}
-    \caption{\label{fig:frog}Exemple score du site}
+    \caption{\label{fig:frog}Exemple d'un score du site.}
 \end{figure}
 \FloatBarrier
 
@@ -57,7 +64,7 @@ Le site que nous avons trouvé est le site \href{https://10fastfingers.com/typin
     \begin{figure}
 \centering
     \includegraphics[width=\textwidth]{screen/Exo1-3.png}
-    \caption{\label{fig:frog}Capture d'écran}
+    \caption{\label{fig:frog}Choisir son éditeur}
 \end{figure}
 \end{itemize}
 \subsection{}
@@ -120,7 +127,7 @@ Pour le script git emergency, voici le code :
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\columnwidth]{screen/1_7.png}
-    \caption{\label{fig:frog}Capture d'écran.}
+    \caption{\label{fig:frog}Config du theme}
     \end{figure}
 
 \end{itemize}
@@ -220,7 +227,7 @@ server_port = 9000
 \subsection{}
 \begin{itemize}
     \item ssh bc
-    \item apt install x11-apps
+    \item sudo apt-get install x11-apps
     \item apt install xauth
     \item \#ForwardX11 yes
     \item ssh -X 192.168.56.3
@@ -244,7 +251,11 @@ Host srv
 \section{TP3 - GIT}
 
 \subsection{}
-
+\begin{itemize}
+    \item git init pour créer le dossier local
+    \item git add Vagrantfile pour ajouter le fichier
+    \item Des fichiers sont non suivis il faut utiliser git add pour les ajouter
+\end{itemize}
 
 \begin{figure}[h]
 \centering
@@ -259,6 +270,10 @@ Host srv
 \end{figure}
 
 \subsection{}
+
+\begin{itemize}
+    \item git checkout -b branche
+\end{itemize}
 
 \begin{figure}[h]
 \centering
@@ -285,7 +300,6 @@ Host srv
 \end{figure}
 
 \begin{figure}[h]
-\centering
 \includegraphics[width=0.7\columnwidth]{screen/git2_5.png}
 \caption{\label{fig:frog}Branche supprimé.}
 \end{figure}
@@ -301,13 +315,13 @@ Host srv
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\columnwidth]{screen/git3_1.png}
-\caption{\label{fig:frog}Commit ok.}
+\caption{\label{fig:frog}Commit ok}
 \end{figure}
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\columnwidth]{screen/git3_2.png}
-\caption{\label{fig:frog}Le conflit.}
+\caption{\label{fig:frog}le conflit.}
 \end{figure}
 
 \begin{figure}[h]

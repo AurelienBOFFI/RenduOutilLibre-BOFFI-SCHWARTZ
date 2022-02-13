@@ -20,4 +20,4 @@
 \contentsline {section}{\numberline {3}TP3 - GIT}{8}{section.3}%
 \contentsline {subsection}{\numberline {3.1}}{8}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}}{8}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}}{9}{subsection.3.3}%
