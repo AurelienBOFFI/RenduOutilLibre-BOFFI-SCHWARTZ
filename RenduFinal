@@ -1,0 +1,235 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[OT1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{listings}
+\usepackage[section]{placeins}
+\usepackage{listings}
+\title{Outils libre côté client}
+\author{BOFFI Aurélien & SCHWARTZ Nicolas}
+
+\begin{document}
+\maketitle
+\section{TP1}
+\subsection{}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c|c}
+       1  & 2 \\
+        1 & 2
+    \end{tabular}
+    \caption{Raccourcis Linux & Divers logiciel}
+    \label{tab:my_label}
+\end{table}
+\subsection{}
+
+Le site que nous avons trouvé est le site \href{https://10fastfingers.com/typing-test/french}{\emph{Fastfingers}} qui est assez connu.
+
+\begin{figure}[h]
+\centering
+\includegraphics[height=\textwidth]{test/frog.jpg}
+\caption{\label{fig:frog}Capture d'écran.}
+\end{figure}
+\FloatBarrier
+\subsection{}
+
+
+\begin{itemize}
+    \item Paramétrer Vim comme éditeur par défaut :
+    \begin{itemize}
+        \item sudo update-alternatives --config editor
+    \end{itemize}
+    On choisis ensuite le numéro de Vim et on confirme :
+    \begin{figure}
+\centering
+\includegraphics[width=\textwidth]{test/frog.jpg}
+\caption{\label{fig:frog}Capture d'écran}
+\end{figure}
+
+\subsection{}
+L'history peut devoiler l'emplacement de fichier sensible, il est donc important de bien le configurer.
+Afin d'eviter les trés nombreux ls et cd il faut ajouter :
+Dans le ~/.bashrc : HISTIGNORE="ls:cd:history"\\
+
+\subsection{}
+Pour la commande mkcd :
+Dans le fichier ~/.bashrc ajouter :
+\begin{lstlisting}
+    function mkcd() { mkdir -p "$@" && cd "$_"; }
+    alias mkcd="mkcd"\
+\end{lstlisting}
+Pour le script git emergency, voici le code :
+\begin{lstlisting}
+    !#/bin/bash
+    gitemergency () {
+	git add .
+	git commit -m "commit d'urgence" $1
+	git push
+    }
+    \end{lstlisting}
+\subsection{}
+
+\begin{itemize}
+\item Créer un fichier vide backup.sh puis on ajoute le script dans /etc/bash_completion :
+\begin{lstlisting}
+    #!/bin/bash
+
+_backup()
+{
+    local cur prev opts
+    
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+
+    local files=("${cur}"*)
+
+    case $COMP_CWORD in
+        1) opts=`getent passwd | cut -d: -f1`;;
+        2) opts="now tonight tomorrow";;
+        3) opts="${files[@]}";;
+        *);;
+    esac
+
+    COMPREPLY=()
+    COMPREPLY=( $(compgen -W "$opts" -- ${cur}) )
+    return 0
+}
+
+complete -o nospace -F _backup backup
+\end{lstlisting}
+\end{itemize}
+
+\subsection{}
+
+\begin{itemize}
+\item Pour ajouter le plugin vagrant prompt nous devont nous rendre dans le fichier de notre theme.
+\item Les themes sont dans le dossier ~/.oh-my-zsh/themes.
+\item Une fois dedans nous devon rajouter les lignes suivantes :
+\begin{lstlisting}
+     PROMPT='[%{$fg[red]%}%n%{$reset_color%}@%{$fg[magenta]%}%m%{$reset_color%}:%{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info) $(vagrant_prompt_info)  ]
+%# '
+
+ZSH_THEME_VAGRANT_PROMPT_PREFIX="%{$fg_bold[blue]%}["
+ZSH_THEME_VAGRANT_PROMPT_SUFFIX="%{$fg_bold[blue]%}]%{$reset_color%} "
+ZSH_THEME_VAGRANT_PROMPT_RUNNING="%{$fg_no_bold[green]%}●"
+ZSH_THEME_VAGRANT_PROMPT_POWEROFF="%{$fg_no_bold[red]%}●"
+ZSH_THEME_VAGRANT_PROMPT_SUSPENDED="%{$fg_no_bold[yellow]%}●"
+ZSH_THEME_VAGRANT_PROMPT_NOT_CREATED="%{$fg_no_bold[white]%}○"
+
+\end{lstlisting}
+\end{itemize}
+
+\subsection{}
+\begin{item}
+\item Code à ajouter dans le fichier ~/.zhsrc
+\begin{lstlisting}
+double-up-history() {
+         apache=$(service --status-all | grep apache2| cut -c4)
+         echo $apache
+         if [[ $apache == "+" ]]
+         then
+                echo "apache va se stop"
+                sudo service apache2 stop
+         else
+                echo " apache va se lancer"
+                sudo service apache2 start
+         fi
+}
+
+zle -N double-up-history
+bindkey "\C-A" double-up-history
+\end{lstlisting}
+\end{item}
+
+\subsection{}
+\begin{itemize}
+    \item Terminaux testé :Terminator, kitty, coolretroterminal
+    \item Terminator : plusieurs onglets ouverts assez facilement + performanant
+    \item Kitty : rapide
+    \item CoolRetroTerminal : difficile a utiliser en raison de son interface
+\end{itemize}
+
+\section{TP2 - SSH}
+\subsection{}
+\begin{itemize}
+    \item ssh alice@192.168.56.3
+    \item ssh carole@192.168.56.3
+    \item ssh bob@192.168.56.3
+\end{itemize}
+Les history sont vides car c'est la première fois que les machines sont utilisés.
+
+\subsection{}
+\begin{itemize}
+    \item ssh-keygen
+    \item ssh-copy-id alice@192.168.56.3
+\end{itemize}
+Pour déposer manuellement : 
+\begin{itemize}
+    \item cat /vagrant/id_rsa.pub >> ~/.ssh/authorized_keys 
+\end{itemize}
+
+\subsection{}
+\begin{itemize}
+    \item Purge du fichier know_hosts :
+    \item echo "" >> know_hosts
+    \item copie manuel :cat /vagrant/id_rsa.pub >> ~/.ssh/authorized_keys
+\end{itemize}
+Ajout de l'host bc :
+\begin{itemize}
+\begin{lstlisting}
+Host
+   Hostname 192.168.56.3
+   User bob
+\end{lstlisting}
+\end{itemize}
+\subsection{}
+\begin{itemize}
+    \item Commande : 
+\begin{lstlisting}
+ssh -L 8000:srv.local:80 alice@cli.local 
+\end{lstlisting}
+\end{itemize}
+
+\subsection{}
+\begin{itemize}
+    \item Sur notre machine : ssh -D 9000 alice@cli.local
+    \item Editer le fichier /etc/tsocks.conf
+    \item Commenter les lignes suivantes et modifier la valeur de server_port :
+\begin{lstlisting}
+#local = 192.168.0.0/255.255.255.0
+#local = 10.0.0.0/255.0.0.0
+server_port = 9000
+
+\end{lstlisting}
+\end{itemize}
+
+\subsection{}
+\begin{itemize}
+    \item ssh bc
+    \item apt install x11-apps
+    \item apt install xauth
+    \item #ForwardX11 yes
+    \item ssh -X 192.168.56.3
+    \item xeyes
+\end{itemize}
+\subsection{}
+\begin{itemize}
+    \item Dans ~/.ssh/config :
+\begin{lstlisting}
+Host srv
+  Hostname 192.168.56.3
+  User alice
+  ProxyJump cli
+#Pour ProxyCommand
+ ProxyCommand ssh cli -W%h:%p
+\end{lstlisting}
+\end{itemize}
+
+
+\section{TP3 - GIT}
+
+\end{document}
